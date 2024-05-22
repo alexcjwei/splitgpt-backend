@@ -1,14 +1,13 @@
 from langchain_core.prompts import ChatPromptTemplate
 from langchain.schema.output_parser import StrOutputParser
 from langchain_openai import ChatOpenAI
-from langchain_core.pydantic_v1 import BaseModel, Field
+from langchain_core.pydantic_v1 import BaseModel, Field, conlist
 from typing import List
-from langchain_core.pydantic_v1 import conlist
 from dotenv import load_dotenv, find_dotenv
 
 _ = load_dotenv(find_dotenv())
-llm = ChatOpenAI(temperature=0, model="gpt-3.5-turbo-0125")
 
+llm = ChatOpenAI(temperature=0, model="gpt-3.5-turbo-0125")
 
 list_contributions_prompt = ChatPromptTemplate.from_template(
     """Extract the contributions made by each person from the following prompt.

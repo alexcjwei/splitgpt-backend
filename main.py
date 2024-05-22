@@ -8,7 +8,7 @@ app = FastAPI()
 
 origins = [
     "http://localhost:5173",
-    "http://yourfrontenddomain.com",
+    "https://sharegpt-frontend.vercel.app",
 ]
 
 app.add_middleware(

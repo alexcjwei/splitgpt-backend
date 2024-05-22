@@ -1,0 +1,9 @@
+1. Figured out what items were bought, for how much, and by whom
+   1. Calculate the shared buying cost (function)
+2. For each item, figured out what items were shared by whom (LLM)
+   1. Calculate the shared cost (function)
+3. For each person
+   1. Summed up the amount they spent (function)
+   2. Summed up the amount they used/shared (function)
+   3. Calculate net value
+4. Sort debtors and creditors from largest --> smallest

@@ -1,0 +1,50 @@
+Sarah bought groceries for $60 and a bottle of wine for $30.
+Jake paid for gas, which costs $50, and bought snacks for $25.
+Emily booked a $150 hotel room for her and Sarah and paid for dinner, which was $90.
+Jake booked his own room for $80, and also bought a hotdog for Emily for $15.
+Jake and Sarah also split a $20 popcorn which they shared with Emily
+
+Items
+Groceries   - $60   - Bought by Sarah   - Shared by Sarah, Jake, Emily  - Shared cost: $60/3 = $20
+Wine        - $30   - Bought by Sarah   - Shared by Sarah, Jake, Emily  - Shared cost: $30/3 = $10
+Gas         - $50   - Bought by Jake    - Shared by Sarah, Jake, Emily  - Shared cost: $50/3 = $16.66
+Snacks      - $25   - Bought by Jake    - Shared by Sarah, Jake, Emily  - Shared cost: $25/3 = $8.33
+Hotel room  - $150  - Booked by Emily   - Shared by Emily, Sarah        - Shared cost: $150/2 = $75
+Hotel room  - $80   - Booked by Jake    - Shared by Jake                - Shared cost: $80
+Dinner      - $90   - Booked by Emily   - Shared by Sarah, Jake, Emily  - Shared cost: $90/3 = $30
+Hotdog      - $15   - Bought by Jake    - Shared by Emily               - Shared cost: $15/1 = $15
+Popcorn     - $20   - Bought by E,J (shared buying cost $10)     - Shared by Sarah, Jake, Emily  - Shared cost: $20/3 = $6.66
+
+Entities Involved
+Sarah   - Spent $60+$30 = $90                   - Shared $20 + $10 + $16.66 + 8.33 + $75 + $30 + 6.66 = 166.65          - Net +$166.65-90=76.65
+Emily   - Spent $150+90+$20/2=$250              - Shared $20 + $10 + $16.66 + $8.33 + $75 + $30 + $15 + 6.66 = 181.65   - Net +$181.65-250=-68.35
+Jake    - Spent $50+$25+$80+$15+$20/2 = $180    - Shared $20 + $10 + $16.66 + $8.33 + $80 + $30 + 6.66 = $171.65        - Net +$171.65-180=-8.35
+Total   - Spent $90+$240+$180 = $520            - Shared $519.95
+
+1. 
+Debtors
+Sarah   - 76.65
+
+Creditors
+Emily   - -68.35
+Jake    - -8.35
+
+Sarah should pay Emily $68.35
+
+2. 
+Debtors
+Sarah   - 8.3
+
+Creditors
+Jake    - -8.35
+
+Sarah should resolve Jake's debt of $8.35
+
+3.
+Debtors
+
+Creditors
+Jake    - 0.05
+
+
+... The value used (shared) and the value spent (total) should be nearly equal, not counting for rounding pennies

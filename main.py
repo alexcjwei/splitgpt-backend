@@ -2,6 +2,9 @@ from typing import List
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+from dotenv import load_dotenv, find_dotenv
+
+load_dotenv(find_dotenv())
 from lib.chains import MarkdownTable, extract_contributions_chain
 
 app = FastAPI()

@@ -15,7 +15,7 @@ app = FastAPI()
 
 origins = [
     "http://localhost:5173",
-    "https://sharegpt-frontend.vercel.app",
+    "splitgpt-alexwei.vercel.app",
 ]
 
 app.add_middleware(

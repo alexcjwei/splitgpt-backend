@@ -51,5 +51,4 @@ def fill_table(req: FillTableRequest):
         )
 
     table: MarkdownTable = extract_contributions_chain.invoke({"input": req.text})
-    print(table)
     return FillTableResponse(columns=table.header, data=table.data)
